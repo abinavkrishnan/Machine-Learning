@@ -1,0 +1,29 @@
+Policy Iteration & Value Iteration (Grid World)
+
+This project implements two fundamental reinforcement learning algorithms—Policy Iteration and Value Iteration—on a 5x5 grid-world environment. The objective is to compute optimal state values and policies that guide an agent to terminal states while minimizing cost.
+
+The environment consists of a grid with two terminal states at opposite corners. Each move results in a negative reward, encouraging the agent to reach terminal states in the fewest steps. Actions include moving up, down, left, and right, with boundary constraints.
+
+Part 1: Policy Iteration
+
+Policy Iteration alternates between two steps:
+
+Policy Evaluation: The value function is updated iteratively based on the current policy until convergence.
+Policy Improvement: The policy is updated by selecting actions that maximize expected returns.
+
+The process repeats until the policy stabilizes. During execution, value matrices and policy updates are printed at each iteration, and error values are tracked to visualize convergence.
+
+Part 2: Value Iteration
+
+Value Iteration directly computes optimal state values using the Bellman optimality equation. At each iteration, state values are updated by selecting the maximum expected return over all possible actions.
+
+The algorithm continues until the change in values falls below a threshold, indicating convergence. Final state values are displayed, and error values per iteration are plotted to show convergence behavior.
+
+Outputs
+State Value Matrices (per iteration and final)
+Optimal Policy (Policy Iteration)
+Error vs. Iteration Graphs
+Tech Stack
+Python
+NumPy
+Matplotlib
