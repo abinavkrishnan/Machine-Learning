@@ -1,0 +1,30 @@
+Clustering Analysis on Iris Dataset (k-Means, GMM, SOM)
+
+This project applies and compares multiple unsupervised learning techniques on the Iris dataset, including k-Means clustering, Gaussian Mixture Models (GMM), and Self-Organizing Maps (SOM). The goal is to analyze clustering performance using quantitative metrics and visualizations.
+
+Part 1: k-Means Clustering
+
+k-Means clustering is applied for values of k from 1 to 20. Reconstruction error (inertia) is computed and plotted to identify the optimal number of clusters using the elbow method. After selecting k (typically k=3), clustering results are evaluated using a confusion matrix and accuracy score. Since cluster labels are arbitrary, the Hungarian algorithm is used to optimally match predicted clusters with true labels.
+
+Part 2: Gaussian Mixture Models (GMM)
+
+GMM is used as a probabilistic clustering approach. Models are trained for different numbers of components, and Akaike Information Criterion (AIC) and Bayesian Information Criterion (BIC) scores are computed and plotted to determine the optimal number of clusters. The selected model is evaluated using a confusion matrix and accuracy, again using optimal label matching.
+
+Part 3: Self-Organizing Maps (SOM)
+
+SOM is applied as a neural-based clustering and visualization technique. The dataset is normalized before training. Multiple grid sizes (e.g., 3x3, 7x7, 15x15, 25x25) are tested, and quantization error is calculated for each. U-Matrix visualizations are generated to show cluster structure, and performance is compared across grid sizes.
+
+Metrics Reported
+Reconstruction Error (k-Means)
+AIC and BIC Scores (GMM)
+Quantization Error (SOM)
+Confusion Matrix
+Clustering Accuracy (with optimal label matching)
+Tech Stack
+Python
+NumPy
+Pandas
+scikit-learn
+Matplotlib
+SciPy
+MiniSom
