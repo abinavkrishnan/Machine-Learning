@@ -1,0 +1,18 @@
+This project uses a Gaussian Naive Bayes classifier to predict iris flower species based on sepal and petal measurements. The dataset is loaded from a CSV file and split into features (length/width) and labels (species).
+
+A 2-fold cross-validation approach is used:
+
+Train on Fold 1, test on Fold 2
+Train on Fold 2, test on Fold 1
+
+Predictions from both folds are combined to evaluate overall performance.
+
+Metrics Reported
+Accuracy
+Confusion Matrix
+Precision, Recall, F1-score
+Tech Stack
+Python
+NumPy
+Pandas
+scikit-learn
