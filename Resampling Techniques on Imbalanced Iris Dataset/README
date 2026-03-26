@@ -1,0 +1,41 @@
+Resampling Techniques on Imbalanced Iris Dataset
+
+This project evaluates the impact of different resampling techniques on an imbalanced version of the Iris dataset using a neural network model. The dataset contains flower measurements as features and class labels with unequal class distribution.
+
+A Multi-Layer Perceptron (MLP) classifier with two hidden layers is used as the learning model. Performance is evaluated using 2-fold cross-validation to ensure consistent comparison across all methods.
+
+Part 1: Imbalanced Dataset
+
+The model is first trained and evaluated on the original imbalanced dataset. Metrics such as confusion matrix, standard accuracy, class-balanced accuracy, and balanced accuracy are computed to highlight the effect of class imbalance on performance.
+
+Part 2: Oversampling
+
+Oversampling techniques are applied to increase the number of samples in minority classes:
+
+Random Oversampling
+SMOTE (Synthetic Minority Over-sampling Technique)
+ADASYN (Adaptive Synthetic Sampling)
+
+Each method generates a more balanced dataset, and the model is evaluated to observe improvements in classification performance.
+
+Part 3: Undersampling
+
+Undersampling techniques are used to reduce the number of samples in majority classes:
+
+Random Undersampling
+Cluster Centroids
+Tomek Links
+
+These methods aim to balance the dataset by removing or refining majority class samples, and their impact on model performance is analyzed.
+
+Metrics Reported
+Confusion Matrix
+Accuracy Score
+Class-Balanced Accuracy
+Balanced Accuracy
+Tech Stack
+Python
+NumPy
+Pandas
+scikit-learn
+imbalanced-learn
