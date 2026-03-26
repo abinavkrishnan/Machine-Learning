@@ -1,0 +1,30 @@
+This project explores multiple feature selection and dimensionality reduction techniques on the Iris dataset using a Decision Tree classifier with 2-fold cross-validation. The goal is to analyze how different feature representations and optimization strategies impact classification performance.
+
+Part 1: Baseline Model
+
+A Decision Tree classifier is trained and evaluated using the original four features (sepal length, sepal width, petal length, petal width). This serves as a baseline for comparison.
+
+Part 2: Principal Component Analysis (PCA)
+
+PCA is applied to transform the original features into a new set of orthogonal components. Eigenvalues, eigenvectors, and proportion of variance (PoV) are computed to determine how much information each component retains. The minimum number of components required to exceed 90 percent variance is selected, and the Decision Tree is evaluated on this reduced feature set.
+
+Part 3: Simulated Annealing
+
+Simulated annealing is used to search for an optimal subset of features from a combined set of original and PCA-transformed features. The algorithm iteratively perturbs feature subsets, evaluates performance, and probabilistically accepts or rejects changes based on accuracy improvements. Restart logic is included to avoid local optima, and iteration logs track progress.
+
+Part 4: Genetic Algorithm
+
+A genetic algorithm is implemented to evolve feature subsets over multiple generations. Each chromosome represents a subset of features, and selection, crossover, and mutation are applied to generate new populations. The best-performing feature subsets are tracked across generations and evaluated using accuracy and confusion matrices.
+
+Metrics Reported
+Accuracy
+Confusion Matrix
+Eigenvalues and Eigenvectors (PCA)
+Proportion of Variance (PoV)
+Selected Feature Subsets
+Iteration and Generation Logs
+Tech Stack
+Python
+NumPy
+Pandas
+scikit-learn
