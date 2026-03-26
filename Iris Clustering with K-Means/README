@@ -1,0 +1,19 @@
+Iris Clustering with K-Means
+
+This project applies unsupervised machine learning using K-Means clustering on the Iris dataset to group flowers based on their physical features. The dataset is loaded from a CSV file and split into feature values (sepal and petal measurements) and true class labels for evaluation purposes.
+
+To determine the optimal number of clusters, the model is trained for values of k ranging from 1 to 20. For each k, the reconstruction error (average distance between data points and their assigned cluster centers) is computed. These values are plotted to visualize the “elbow method,” which helps identify the point where increasing k no longer significantly improves clustering performance.
+
+After selecting the optimal number of clusters (elbow_k), K-Means is run again to assign cluster labels. For k = 3, cluster labels are mapped to the true class labels by assigning each cluster to the majority class within it. This allows for evaluation using a confusion matrix and accuracy score.
+
+Metrics Reported
+Reconstruction Error (for elbow method)
+Confusion Matrix
+Accuracy (only when k = number of true classes)
+Tech Stack
+Python
+NumPy
+Pandas
+scikit-learn
+Matplotlib
+SciPy
