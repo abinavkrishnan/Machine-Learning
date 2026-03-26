@@ -1,0 +1,25 @@
+Model Comparison on Iris Dataset
+
+This project compares multiple machine learning models on the Iris dataset using a 2-fold cross-validation approach. The dataset is loaded from a CSV file and split into feature variables (sepal and petal measurements) and target labels (flower species). Since some models require numerical input, class labels are encoded into integers.
+
+The dataset is divided into two equal folds. Each model is trained on one fold and tested on the other, then the process is reversed. Predictions from both folds are combined to evaluate overall performance.
+
+A wide range of models are tested, including:
+
+Regression Models: Linear Regression, Polynomial Regression (degree 2 and 3)
+Probabilistic Model: Naive Bayes
+Instance-Based Model: k-Nearest Neighbors (kNN)
+Linear Models: Linear Discriminant Analysis (LDA), Quadratic Discriminant Analysis (QDA), Linear SVM
+Tree-Based Models: Decision Tree, Random Forest, Extra Trees
+Neural Network: Multi-Layer Perceptron (MLP)
+
+For regression-based models, predictions are rounded and clipped to match valid class labels.
+
+Metrics Reported
+Accuracy
+Confusion Matrix
+Tech Stack
+Python
+NumPy
+Pandas
+scikit-learn
