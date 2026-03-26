@@ -1,0 +1,13 @@
+Reinforcement Learning Algorithms for Gridworld
+Description
+
+This project implements and compares several reinforcement learning algorithms on a Gridworld environment. It includes:
+
+Monte Carlo First Visit
+Monte Carlo Every Visit
+Monte Carlo On-Policy-Plus Every Visit
+Q-Learning
+SARSA
+Decaying Epsilon-Greedy
+
+The program computes and displays state visit counts, returns, value functions, Q-values, and policies over epochs/episodes. It also visualizes error convergence and compares cumulative average rewards across algorithms.
